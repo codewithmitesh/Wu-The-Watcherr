@@ -6,12 +6,12 @@ export default function Watcher() {
   const [search, setSearch] = useState("Pune");
   useEffect(() => {
     const fetchApi = async () => {
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&appid=e805b5ce947d9fee12bab196d3444c99`;
+      const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e805b5ce947d9fee12bab196d3444c99`;
 
       const response = await fetch(url);
       const resJson = await response.json();
-      //   console.log(resJson);
       setCity(resJson.main);
+        // console.log(resJson);
     };
 
     fetchApi();
@@ -29,14 +29,14 @@ export default function Watcher() {
         />
       </div>
       {!city ? (
-        <p> Stay in your universe!!</p>
+        <p className="errorMsg"> Stay in your universe!!</p>
       ) : (<>
         <div className="info">
           <h2 className="location">
             <i className="fas fa-street-view"></i> {search}
           </h2>
-          <h1 className="temp">{city.temp}</h1>
-          <h3 className="tempmin_max">1222|121313</h3>
+          <h1 className="temp">{city.temp}℃</h1>
+          <h3 className="tempmin_max">{city.temp_max}℃|{city.temp_min}℃</h3>
         </div>
         </>
       )}
