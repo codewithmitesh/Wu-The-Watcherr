@@ -11,25 +11,35 @@ export default function Watcher() {
       const response = await fetch(url);
       const resJson = await response.json();
       //   console.log(resJson);
-      setCity(resJson);
+      setCity(resJson.main);
     };
 
     fetchApi();
-  },[search]);
+  }, [search]);
 
   return (
     <div className="box">
       <div className="inputData">
-        <input type="serch" className="inputField" onChange={(e) => {setSearch(e.target.value)}} />
+        <input
+          type="serch"
+          className="inputField"
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        />
       </div>
-
-      <div className="info">
-        <h2 className="location">
-          <i className="fas fa-street-view"></i> {search} 
-        </h2>
-        <h1 className="temp">20 deg</h1>
-        <h3 className="tempmin_max">1222|121313</h3>
-      </div>
+      {!city ? (
+        <p> Stay in your universe!!</p>
+      ) : (<>
+        <div className="info">
+          <h2 className="location">
+            <i className="fas fa-street-view"></i> {search}
+          </h2>
+          <h1 className="temp">{city.temp}</h1>
+          <h3 className="tempmin_max">1222|121313</h3>
+        </div>
+        </>
+      )}
 
       <div className="wave -one"></div>
       <div className="wave -two"></div>
