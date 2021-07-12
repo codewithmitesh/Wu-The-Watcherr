@@ -15,6 +15,8 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: "Jost", sans-serif;
+    /* background-image: url("./Watcher.jpg"); */
+    background-color: antiquewhite;
 }
 
 html {
@@ -37,6 +39,7 @@ html {
     transform: translate3d(0, 0, 0);
     min-width: 20rem;
     min-height: 35rem;
+    margin-left: 100px;
 }
 
 .wave {
