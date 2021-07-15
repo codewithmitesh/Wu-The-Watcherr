@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #f3f2ef;
+    /* background: #f3f2ef; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,6 +213,7 @@ body > span {
 .inputField {
     width: 50%;
     margin: auto;
+    margin-top: 10px;
     border-radius: 5rem;
     padding: 1rem 1rem;
     outline: none;
