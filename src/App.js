@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Intropage/>
       <Watcher /> {/* calling the watcher component in app.js file */}
-    </div>
+    </div> 
   );
 }
 

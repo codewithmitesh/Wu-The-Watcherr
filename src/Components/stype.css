@@ -18,12 +18,12 @@ body {
     /* background-image: url("./Watcher.jpg"); */
     /* background-color: antiquewhite; */
 }
-.Intropage{
+/* .Intropage{
     height: 100vh;
     width: inherit;
     background-color: aquamarine;
 
-}
+} */
 html {
     font-size: 100%;
     width: 100%;
@@ -34,7 +34,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #101F48;
 }
 html {
     background: #eee;

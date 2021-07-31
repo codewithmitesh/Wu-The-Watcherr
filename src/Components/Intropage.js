@@ -1,5 +1,5 @@
 import React from "react";
-import "../Components/stype.css";
+import "../Components/intropage.css";
 export default function Intropage (){
   return (
     <div>

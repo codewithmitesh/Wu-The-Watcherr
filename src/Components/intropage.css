@@ -1,0 +1,6 @@
+.Intropage {
+  height: 100vh;
+  width: inherit;
+  background-image: url(/src/Images/Background.png);
+  background-size: cover;
+}
