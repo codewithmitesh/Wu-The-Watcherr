@@ -41,7 +41,7 @@ export default function Watcher() {
             <>
               <div className="info">
                 <h2 className="location">
-                  <i className="fas fa-street-view"></i> {search}
+                <i class="fas fa-globe-asia"></i> {search}
                 </h2>
                 <h1 className="temp">{city.temp}℃</h1>
                 <h3 className="tempmin_max">
