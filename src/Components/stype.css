@@ -42,7 +42,7 @@ html {
   width: 25vw;
   height: 60vh;
   border-radius: 0.5rem;
-  box-shadow: 0 0.2rem 3rem #E6F7FA;
+  box-shadow: 0 0.2rem 3rem #e6f7fa;
   /* background: #35578a; */
 
   backdrop-filter: blur(16px) saturate(180%);
@@ -73,7 +73,7 @@ html {
   position: absolute;
   top: 120%;
   left: 50%;
-  background: #E6F7FA;
+  background: #e6f7fa;
   width: 50rem;
   height: 50rem;
   margin-left: -25rem;
@@ -137,8 +137,6 @@ html {
   text-transform: capitalize;
 }
 
-
-
 @keyframes rotates {
   from {
     transform: translateX(-0.5rem);
@@ -193,12 +191,102 @@ html {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1240px) {
+  .wu-text {
+    font-size: 15px;
+  }
   .box {
-    width: 90vw;
-    height: 80vh;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  a#btn {
+    font-size: 1.5em;
+  }
+  .wu-text {
+    font-size: 12px;
   }
 
+  .box {
+    min-width: 16rem;
+    min-height: 29rem;
+    margin-left: 8px;
+  }
+  input.inputField {
+    padding: 12px 12px;
+    font-size: 16px;
+    margin-top: 21px;
+  }
+  .location {
+    font-size: 3rem;
+  }
+  .temp {
+    font-size: 2rem;
+  }
+  .tempmin_max {
+    font-size: 1rem;
+  }
+  .wave {
+    top: 139%;
+    left: 60%;
+  }
+  .wave.-two {
+    display: none;
+  }
+  #Plante-big {
+    display: none;
+  }
+  img#Bg-Image {
+    height: 88%;
+  }
+  img#Planet-small {
+    height: 88%;
+  }
+}
+@media (max-width: 426px) {
+  .content {
+    height: 200vh;
+  }
+  .box {
+    width: auto;
+  }
+  a#btn {
+    font-size: 13px;
+  }
+  img#Bg-Image {
+    height: 88%;
+  }
+  input.inputField {
+    padding: 12px 12px;
+    font-size: 16px;
+    margin-top: 21px;
+  }
+}
+/* @media (max-width: 320px) {
+  .box {
+    min-width: 14rem;
+    min-height: 20rem;
+  }
+  .wu-text {
+    width: 88%;
+    padding: 0;
+    font-size: 9px;
+    margin: 22px 0px;
+  }
+}  */
+
+@media (max-width: 600px) {
+  .box {
+    width: 53vw;
+    height: 70vh;
+  }
+  .wu-text {
+    width: auto;
+    padding: 14px;
+    font-size: 11px;
+    margin: 22px 0px;
+  }
+  /*
   .wave {
     top: 85%;
   }
@@ -209,10 +297,15 @@ html {
 
   .info {
     font-size: 1.5em;
+  } */
+
+  .content {
+    flex-direction: column;
+    height: 160vh;
   }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .box {
     height: 80vh;
   }
@@ -220,7 +313,7 @@ html {
   .wave {
     top: 115%;
   }
-}
+} */
 
 body > span {
   width: 100vw;
@@ -251,5 +344,5 @@ body > span {
   font-size: 2rem;
   margin: 2rem auto;
   font-weight: bold;
-  color: #E6F7FA;
+  color: #e6f7fa;
 }

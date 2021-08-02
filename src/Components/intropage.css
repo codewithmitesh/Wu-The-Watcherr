@@ -54,6 +54,7 @@
 }
 #Bg-Image{
   z-index: -10;
+  /* background-position: cover  ; */
 }
 .Intropage::before {
   content: "";
