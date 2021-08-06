@@ -64,3 +64,9 @@ export default function Watcher() {
 }
 //api.openweathermap.org/data/2.5/weather?q={city name}&appid=e805b5ce947d9fee12bab196d3444c99
 //key e805b5ce947d9fee12bab196d3444c99
+
+
+// For This Kind Of Error 
+// simply replace http with https 
+
+// Watcher.js:11 Mixed Content: The page at 'https://wu-the-watcher.netlify.app/' was loaded over HTTPS, but requested an insecure resource 'http://api.openweathermap.org/data/2.5/weather?q=Pune&units=metric&appid=e805b5ce947d9fee12bab196d3444c99'. This request has been blocked; the content must be served over HTTPS.
