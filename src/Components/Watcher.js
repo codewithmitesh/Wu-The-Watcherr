@@ -6,7 +6,7 @@ export default function Watcher() {
   const [search, setSearch] = useState("Pune");
   useEffect(() => {
     const fetchApi = async () => {
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e805b5ce947d9fee12bab196d3444c99`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e805b5ce947d9fee12bab196d3444c99`;
 
       const response = await fetch(url);
       const resJson = await response.json();
