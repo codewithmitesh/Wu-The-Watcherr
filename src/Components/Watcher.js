@@ -27,8 +27,9 @@ export default function Watcher() {
      <br/>Ask Wu the place that exist in the worls and he will return the Current Temprature in degree celsius. Dont irritate him too much otherwise he will curse you!!!  
      ** wu is fictional Character!!
 
-      </div>  
-        <div className="box">
+      </div>   
+      
+        <div className="box">                      
           <div className="inputData">
             <input
               type="serch"
